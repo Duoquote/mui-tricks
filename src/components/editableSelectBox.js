@@ -87,4 +87,5 @@ render(<Showcase />);
 
 export const scope = { useState, Select, MenuItem, FormControl, InputLabel, IconButton, MdEdit, TextField, MdSave };
 export const name = "Editable Select Box";
+export const id = "editable-select-box";
 export const editorWidth = 8;

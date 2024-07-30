@@ -1,15 +1,17 @@
 import React from "react";
 
-import { Box, Container, Typography, Grid, Paper, Divider, Stack } from "@mui/material";
+import { Box, Container, Typography, Grid, Paper, Divider, Stack, Link } from "@mui/material";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { themes } from "prism-react-renderer";
 import components from "./components";
 
-const Editor = ({ name, code, scope, editorWidth = 6 }) => {
+const Editor = ({ id, name, code, scope, editorWidth = 6 }) => {
   return (
-    <Paper variant="outlined" id={name}>
+    <Paper variant="outlined" id={id}>
       <Typography variant="h6" sx={{ px: 2, py: 1 }}>
-        {name}
+        <Link href={`#${id}`} color="inherit" underline="none">
+          {name}
+        </Link>
       </Typography>
       <Divider />
       <Box sx={{ p: 2 }}>
@@ -45,10 +47,7 @@ const App = () => {
           components.map((component, i) => (
             <Editor
               key={i}
-              name={component.name}
-              code={component.code}
-              scope={component.scope}
-              editorWidth={component.editorWidth}
+              {...component}
             />
           ))
         }

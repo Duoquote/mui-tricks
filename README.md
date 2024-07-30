@@ -8,4 +8,4 @@ This is a collection of Material-UI tricks/components that I have been in need o
 
 ### Components
 
-- [x] [Editable Select Box](https://duoquote.github.io/mui-tricks/#/editable-select-box)
+- [x] [Editable Select Box](https://duoquote.github.io/mui-tricks/#editable-select-box)
