@@ -1,4 +1,5 @@
 # MUI Tricks
+![mui-tricks](./assets/mui-tricks.png)
 
 ### Browse here: [https://duoquote.github.io/mui-tricks/](https://duoquote.github.io/mui-tricks/)
 
